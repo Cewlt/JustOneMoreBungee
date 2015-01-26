@@ -10,15 +10,15 @@ import net.md_5.bungee.event.EventHandler;
 public class JustOneMore extends Plugin implements Listener {
   
   @Override
-	public void onEnable() {
-      	    this.getProxy().getPluginManager().registerListener(this, this);
-	}
+    public void onEnable() {
+      	this.getProxy().getPluginManager().registerListener(this, this);
+   }
 	
   @EventHandler
   public void onPing(ProxyPingEvent ev) {
 		ServerPing r = ev.getResponse();
 		Players p = r.getPlayers();
-		p = new Players(Math.min(p.getOnline() + 1, p.getMax()), p.getOnline(), p.getSample());
+		p = new Players(p.getOnline() + 1, p.getOnline(), p.getSample());
 		ServerPing ping = new ServerPing(r.getVersion(), p, r.getDescription(), r.getFaviconObject());
 		ev.setResponse(ping);
 	}
