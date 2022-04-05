@@ -19,7 +19,7 @@ public class JustOneMore extends Plugin implements Listener {
 		ServerPing r = ev.getResponse();
 		Players p = r.getPlayers();
 		p = new Players(p.getOnline() + 1, p.getOnline(), p.getSample());
-		ServerPing ping = new ServerPing(r.getVersion(), p, r.getDescription(), r.getFaviconObject());
+		r.setPlayers(p);
 		ev.setResponse(ping);
 	}
 }
