@@ -1,4 +1,8 @@
-# JustOneMoreBungee
-*BUNGEECORD VERSION* Sets the max players to one more than the current online players (Like Mineplex) 
+## JustOneMoreBungee
+### *BUNGEECORD VERSION* - BUKKIT VERSION [HERE](https://github.com/Cewlt/JustOneMore)
+### Sets the max players to one more than the current online players (Like Mineplex) 
 
-Commands, Permissions and Usage can be found on http://www.spigotmc.org/resources/justonemore-bungeecord.2227/
+###### http://www.spigotmc.org/resources/justonemore-bungeecord.2227/
+
+#### Reviews:
+![](https://drive.google.com/uc?export=download&id=1W_knUqAj3wbMPeggejAEXd4pjqfwE48O)
